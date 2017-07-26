@@ -3,7 +3,7 @@
 
 def dot(a, b):
 	if len(a[0]) != len(b):
-		raise ValueError('shapes (%d,%d) and (%d,%d) not aligned' % (len(a), len(a[0]), len(b), len(b[0])))
+		raise ValueError('shapes (%d, %d) and (%d, %d) not aligned' % (len(a), len(a[0]), len(b), len(b[0])))
 
 	c = [[0 for n in xrange(len(b[0]))] for m in xrange(len(a))]
 
@@ -58,7 +58,7 @@ def identity(n):
 
 def multiply(a, b):
 	if len(a) != len(b) or len(a[0]) != len(b[0]):
-		raise ValueError('shapes (%d,%d) and (%d,%d) not aligned' % (len(a), len(a[0]), len(b), len(b[0])))
+		raise ValueError('shapes (%d, %d) and (%d, %d) not aligned' % (len(a), len(a[0]), len(b), len(b[0])))
 
 	c = [[0 for n in xrange(len(a[0]))] for m in xrange(len(a))]
 
@@ -71,7 +71,7 @@ def multiply(a, b):
 
 def direct_sum(a, b):
 	if len(a) != len(b) or len(a[0]) != len(b[0]):
-		raise ValueError('shapes (%d,%d) and (%d,%d) not aligned' % (len(a), len(a[0]), len(b), len(b[0])))
+		raise ValueError('shapes (%d, %d) and (%d, %d) not aligned' % (len(a), len(a[0]), len(b), len(b[0])))
 
 	c = [[0 for n in xrange(len(a[0]))] for m in xrange(len(a))]
 
