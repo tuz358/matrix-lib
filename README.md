@@ -3,7 +3,7 @@
 Matrix library implemented in various languages.
 
 ## Java
-OS: macOS 10.12.6  
+OS: macOS 10.12.6    
 Version: javac 1.8.0_121
 
 **Tutorial**
@@ -16,7 +16,7 @@ $ java Test
 
 
 ## Python
-OS: macOS 10.12.6  
+OS: macOS 10.12.6    
 Version: Python2.7.13, 3.6.0
 
 **Getting Started**
