@@ -55,6 +55,7 @@ def identity(n):
 
 	return E
 
+
 def multiply(a, b):
 	if len(a) != len(b) or len(a[0]) != len(b[0]):
 		raise ValueError('shapes (%d,%d) and (%d,%d) not aligned' % (len(a), len(a[0]), len(b), len(b[0])))
