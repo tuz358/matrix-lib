@@ -9,7 +9,7 @@ class Test {
     matrix B = new matrix(b);
     matrix C = new matrix(3, 3);
 
-    System.out.println("C = dot(A, B)");
+    System.out.println("C = A.dot(B)");
     System.out.println("------------------");
     C = A.dot(B);
     printmatrix(A, "A");
@@ -17,37 +17,37 @@ class Test {
     printmatrix(C, "C");
     System.out.println("------------------");
 
-    System.out.println("A_t = transpose(A)");
+    System.out.println("A_t = A.transpose()");
     System.out.println("------------------");
     matrix A_t = A.transpose();
     printmatrix(A_t, "A_t");
     System.out.println("------------------");
 
-    System.out.println("C = outer(A, B)");
+    System.out.println("C = A.outer(B)");
     System.out.println("------------------");
     C = A.outer(B);
     printmatrix(C, "C");
     System.out.println("------------------");
 
-    System.out.println("tr_A = trace(A)");
+    System.out.println("tr_A = A.trace()");
     System.out.println("------------------");
     float tr_A = A.trace();
     System.out.println(java.text.MessageFormat.format("tr_A: {0}\n", tr_A));
     System.out.println("------------------");
 
-    System.out.println("E3 = identity(3)");
+    System.out.println("E3 = new matrix(3, 3).identity(3)");
     System.out.println("------------------");
     matrix E3 = new matrix(3, 3).identity(3);
     printmatrix(E3, "E3");
     System.out.println("------------------");
 
-    System.out.println("C = multiply(A, B)");
+    System.out.println("C = A.multiply(B)");
     System.out.println("------------------");
     C = A.multiply(B);
     printmatrix(C, "C");
     System.out.println("------------------");
 
-    System.out.println("C = direct_sum(A, B)");
+    System.out.println("C = A.direct_sum(B)");
     System.out.println("------------------");
     C = A.direct_sum(B);
     printmatrix(C, "C");
