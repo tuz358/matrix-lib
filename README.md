@@ -15,7 +15,7 @@ $ java Test
 
 
 ## Python
-Version: Python2.7.13, 3.6.0
+Version: 2.7.13, 3.6.0
 
 **Getting Started**
 ```
@@ -33,4 +33,35 @@ $ cd ./matrix-lib-master/python/
 >>> matrix.dot(a, b)
 [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 >>>
+```
+
+
+## Ruby
+Version: 2.0.0p648
+
+**Getting Started**
+```
+$ git clone http://github.com/tuz358/matrix-lib
+$ cd ./matrix-lib-master/ruby/
+```
+
+**Example**
+```Ruby
+$ ruby ./test.rb
+matrix a:
+1	2	3
+4	5	6
+7	8	9
+
+matrix b:
+1	0	0
+0	1	0
+0	0	1
+
+dot:
+1	2	3
+4	5	6
+7	8	9
+...
+...
 ```
