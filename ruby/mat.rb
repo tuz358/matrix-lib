@@ -1,5 +1,3 @@
-#!/usr/bin/ruby
-
 
 def dot(a, b)
   c = Array.new(a.length, 0).map{Array.new(b[0].length, 0)}
@@ -16,7 +14,7 @@ def dot(a, b)
 end
 
 def transpose(a)
-  '''
+=begin
   transposed = Array.new(a.length, 0).map{Array.new(a[0].length, 0)}
 
   transposed[0].each_index do |j|
@@ -26,7 +24,7 @@ def transpose(a)
   end
 
   return transposed
-  '''
+=end
   return a.transpose
 end
 
