@@ -1,6 +1,6 @@
 //import com.tuz358.matrix;
 
-class Test {
+class Sample {
   public static void main(String args[]){
     float[][] a = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
     float[][] b = {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}};
