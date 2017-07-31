@@ -9,8 +9,8 @@ Version: javac 1.8.0_121
 ```
 $ git clone http://github.com/tuz358/matrix-lib
 $ cd ./matrix-lib-master/java/
-$ javac Test.java matrix.java
-$ java Test
+$ javac Sample.java matrix.java
+$ java Sample
 ```
 
 
@@ -24,7 +24,7 @@ $ cd ./matrix-lib-master/python/
 ```
 
 **Example**
-```python
+```
 >>> import matrix
 >>> a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 >>> b = matrix.identity(3)
@@ -46,8 +46,8 @@ $ cd ./matrix-lib-master/ruby/
 ```
 
 **Example**
-```Ruby
-$ ruby ./test.rb
+```
+$ ruby ./sample.rb
 matrix a:
 1	2	3
 4	5	6
