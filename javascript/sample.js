@@ -32,7 +32,7 @@ printmatrix(matrix.outer(a,b))
 
 console.log("trace(a)")
 console.log(String(matrix.trace(a)))
-console.log("\n")
+console.log("")
 
 console.log("identity(a,b)")
 printmatrix(matrix.identity(3))

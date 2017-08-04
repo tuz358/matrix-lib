@@ -75,3 +75,14 @@ $ git clone http://github.com/tuz358/matrix-lib
 $ cd ./matrix-lib-master/golang/
 $ go run ./sample.go
 ```
+
+## Javascript
+**Requirement**
+- node.js
+
+**Demo**
+```
+$ git clone http://github.com/tuz358/matrix-lib
+$ cd ./matrix-lib-master/Javascript/
+$ node ./sample.js
+```
