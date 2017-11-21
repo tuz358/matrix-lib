@@ -33,7 +33,7 @@ func Transpose(a [][]float32) ([][]float32) {
 func Inverse2d(a [][]float32) ([][]float32) {
 	inversed := [][]float32{{0, 0}, {0, 0}}
 
-	det_a = a[0][0] * a[1][1] - a[0][1] * a[1][0]
+	det_a := a[0][0] * a[1][1] - a[0][1] * a[1][0]
 
 	inversed[0][0] =  a[1][1] / det_a
 	inversed[0][1] = -a[0][1] / det_a
