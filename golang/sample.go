@@ -31,7 +31,12 @@ func main () {
   fmt.Println()
 
   fmt.Println("Inverse2d(c):")
-  printmatrix(matrix.Inverse2d(c))
+  inversed, err := matrix.Inverse2d(c)
+  if err != nil {
+    fmt.Println(err)
+  } else {
+    printmatrix(inversed)
+  }
   fmt.Println()
 
   fmt.Println("Outer(a, b):")
