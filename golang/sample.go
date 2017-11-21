@@ -8,6 +8,7 @@ import (
 func main () {
   a := [][]float32{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
   b := [][]float32{{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}
+  c := [][]float32{{1, 2}, {3, 4}}
 
   fmt.Println("matrix a:")
   printmatrix(a)
@@ -17,12 +18,20 @@ func main () {
   printmatrix(b)
   fmt.Println()
 
+  fmt.Println("matrix c:")
+  printmatrix(c)
+  fmt.Println()
+
   fmt.Println("Dot(a, b):")
   printmatrix(matrix.Dot(a, b))
   fmt.Println()
 
   fmt.Println("Transpose(a):")
   printmatrix(matrix.Transpose(a))
+  fmt.Println()
+
+  fmt.Println("Inverse2d(c):")
+  printmatrix(matrix.Inverse2d(c))
   fmt.Println()
 
   fmt.Println("Outer(a, b):")
