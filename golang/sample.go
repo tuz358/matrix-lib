@@ -18,31 +18,31 @@ func main () {
   fmt.Println()
 
   fmt.Println("Dot(a, b):")
-  printmatrix(matrix.Dot(a, b))
+  printmatrix(matrix.dot(a, b))
   fmt.Println()
 
   fmt.Println("Transpose(a):")
-  printmatrix(matrix.Transpose(a))
+  printmatrix(matrix.transpose(a))
   fmt.Println()
 
   fmt.Println("Outer(a, b):")
-  printmatrix(matrix.Outer(a, b))
+  printmatrix(matrix.outer(a, b))
   fmt.Println()
 
   fmt.Println("Trace(a):")
-  fmt.Println(matrix.Trace(a))
+  fmt.Println(matrix.trace(a))
   fmt.Println()
 
   fmt.Println("Identity(3):")
-  printmatrix(matrix.Identity(3))
+  printmatrix(matrix.identity(3))
   fmt.Println()
 
   fmt.Println("Multiply(a, b):")
-  printmatrix(matrix.Multiply(a, b))
+  printmatrix(matrix.multiply(a, b))
   fmt.Println()
 
   fmt.Println("Direct_sum(a, b):")
-  printmatrix(matrix.Direct_sum(a, b))
+  printmatrix(matrix.direct_sum(a, b))
   fmt.Println()
 }
 
