@@ -1,6 +1,6 @@
 package matrix
 
-func dot(a [][]float32, b [][]float32) ([][]float32) {
+func Dot(a [][]float32, b [][]float32) ([][]float32) {
 	out := make([][]float32, len(b[0]))
 	for i := range out {
 		out[i] = make([]float32, len(a))
@@ -16,7 +16,7 @@ func dot(a [][]float32, b [][]float32) ([][]float32) {
 	return out
 }
 
-func transpose(a [][]float32) ([][]float32) {
+func Transpose(a [][]float32) ([][]float32) {
 	transposed := make([][]float32, len(a[0]))
 	for i := range transposed {
 		transposed[i] = make([]float32, len(a))
@@ -30,7 +30,7 @@ func transpose(a [][]float32) ([][]float32) {
 	return transposed
 }
 
-func inverse2d(a [][]float32) ([][]float32) {
+func Inverse2d(a [][]float32) ([][]float32) {
 	inversed := [][]float32{{0, 0}, {0, 0}}
 
 	det_a = a[0][0] * a[1][1] - a[0][1] * a[1][0]
@@ -43,7 +43,7 @@ func inverse2d(a [][]float32) ([][]float32) {
 	return inversed
 }
 
-func outer(a [][]float32, b [][]float32) ([][]float32) {
+func Outer(a [][]float32, b [][]float32) ([][]float32) {
 	out := make([][]float32, len(b)*len(b[0]))
 	for i := range out {
 		out[i] = make([]float32, len(a)*len(a[0]))
@@ -67,7 +67,7 @@ func outer(a [][]float32, b [][]float32) ([][]float32) {
 	return out
 }
 
-func trace(a [][]float32) (float32) {
+func Trace(a [][]float32) (float32) {
 	var trace_a float32 = 0
 	for i := 0; i < len(a); i++ {
 		trace_a += a[i][i]
@@ -75,7 +75,7 @@ func trace(a [][]float32) (float32) {
 	return trace_a
 }
 
-func identity(n int) ([][]float32) {
+func Identity(n int) ([][]float32) {
 	E := make([][]float32, n)
 	for i := range E {
 		E[i] = make([]float32, n)
@@ -87,7 +87,7 @@ func identity(n int) ([][]float32) {
 	return E
 }
 
-func multiply(a [][]float32, b [][]float32) ([][]float32) {
+func Multiply(a [][]float32, b [][]float32) ([][]float32) {
 	out := make([][]float32, len(a[0]))
 	for i := range out {
 		out[i] = make([]float32, len(a))
@@ -101,7 +101,7 @@ func multiply(a [][]float32, b [][]float32) ([][]float32) {
 	return out
 }
 
-func direct_sum(a [][]float32, b [][]float32) ([][]float32) {
+func Direct_sum(a [][]float32, b [][]float32) ([][]float32) {
 	out := make([][]float32, len(a[0]))
 	for i := range out {
 		out[i] = make([]float32, len(a))
