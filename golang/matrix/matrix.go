@@ -30,6 +30,19 @@ func Transpose(a [][]float32) ([][]float32) {
 	return transposed
 }
 
+func inverse2d(a [][]float32) ([][]float32) {
+	inversed := [][]float32{{0, 0}, {0, 0}}
+
+	det_a = a[0][0] * a[1][1] - a[0][1] * a[1][0]
+
+	inversed[0][0] =  a[1][1] / det_a
+	inversed[0][1] = -a[0][1] / det_a
+	inversed[1][0] = -a[1][0] / det_a
+	inversed[1][1] =  a[0][0] / det_a
+	
+	return inversed
+}
+
 func Outer(a [][]float32, b [][]float32) ([][]float32) {
 	out := make([][]float32, len(b)*len(b[0]))
 	for i := range out {
