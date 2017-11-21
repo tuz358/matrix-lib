@@ -1,6 +1,6 @@
 package matrix
 
-func Dot(a [][]float32, b [][]float32) ([][]float32) {
+func dot(a [][]float32, b [][]float32) ([][]float32) {
 	out := make([][]float32, len(b[0]))
 	for i := range out {
 		out[i] = make([]float32, len(a))
@@ -16,7 +16,7 @@ func Dot(a [][]float32, b [][]float32) ([][]float32) {
 	return out
 }
 
-func Transpose(a [][]float32) ([][]float32) {
+func transpose(a [][]float32) ([][]float32) {
 	transposed := make([][]float32, len(a[0]))
 	for i := range transposed {
 		transposed[i] = make([]float32, len(a))
@@ -39,11 +39,11 @@ func inverse2d(a [][]float32) ([][]float32) {
 	inversed[0][1] = -a[0][1] / det_a
 	inversed[1][0] = -a[1][0] / det_a
 	inversed[1][1] =  a[0][0] / det_a
-	
+
 	return inversed
 }
 
-func Outer(a [][]float32, b [][]float32) ([][]float32) {
+func outer(a [][]float32, b [][]float32) ([][]float32) {
 	out := make([][]float32, len(b)*len(b[0]))
 	for i := range out {
 		out[i] = make([]float32, len(a)*len(a[0]))
@@ -67,7 +67,7 @@ func Outer(a [][]float32, b [][]float32) ([][]float32) {
 	return out
 }
 
-func Trace(a [][]float32) (float32) {
+func trace(a [][]float32) (float32) {
 	var trace_a float32 = 0
 	for i := 0; i < len(a); i++ {
 		trace_a += a[i][i]
@@ -75,7 +75,7 @@ func Trace(a [][]float32) (float32) {
 	return trace_a
 }
 
-func Identity(n int) ([][]float32) {
+func identity(n int) ([][]float32) {
 	E := make([][]float32, n)
 	for i := range E {
 		E[i] = make([]float32, n)
@@ -87,7 +87,7 @@ func Identity(n int) ([][]float32) {
 	return E
 }
 
-func Multiply(a [][]float32, b [][]float32) ([][]float32) {
+func multiply(a [][]float32, b [][]float32) ([][]float32) {
 	out := make([][]float32, len(a[0]))
 	for i := range out {
 		out[i] = make([]float32, len(a))
@@ -101,7 +101,7 @@ func Multiply(a [][]float32, b [][]float32) ([][]float32) {
 	return out
 }
 
-func Direct_sum(a [][]float32, b [][]float32) ([][]float32) {
+func direct_sum(a [][]float32, b [][]float32) ([][]float32) {
 	out := make([][]float32, len(a[0]))
 	for i := range out {
 		out[i] = make([]float32, len(a))
