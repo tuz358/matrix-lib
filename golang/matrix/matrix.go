@@ -1,5 +1,7 @@
 package matrix
 
+import "errors"
+
 func Dot(a [][]float32, b [][]float32) ([][]float32) {
 	out := make([][]float32, len(b[0]))
 	for i := range out {
@@ -30,17 +32,21 @@ func Transpose(a [][]float32) ([][]float32) {
 	return transposed
 }
 
-func Inverse2d(a [][]float32) ([][]float32) {
+func Inverse2d(a [][]float32) ([][]float32, error) {
 	inversed := [][]float32{{0, 0}, {0, 0}}
 
 	det_a := a[0][0] * a[1][1] - a[0][1] * a[1][0]
+
+	if det_a == 0{
+		return inversed, errors.New("Error: can't defined inverse matrix (det == 0)")
+	}
 
 	inversed[0][0] =  a[1][1] / det_a
 	inversed[0][1] = -a[0][1] / det_a
 	inversed[1][0] = -a[1][0] / det_a
 	inversed[1][1] =  a[0][0] / det_a
 
-	return inversed
+	return inversed, nil
 }
 
 func Outer(a [][]float32, b [][]float32) ([][]float32) {
